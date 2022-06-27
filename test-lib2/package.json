@@ -1,0 +1,16 @@
+{
+  "name": "test-lib2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/plugin-transform-arrow-functions": "^7.17.12",
+    "@babel/plugin-transform-react-jsx": "^7.17.12",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

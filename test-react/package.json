@@ -1,0 +1,40 @@
+{
+  "name": "test-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/sooyeon0901/first-deploy",
+  "peerDependencies": {
+    "draft-js": "^0.11.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack4": "^6.5.9",
+    "@storybook/manager-webpack4": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.75.7"
+  },
+  "scripts": {
+    "clean" : "rimraf lib",
+    "build" : "yarn clean && rollup -c",
+    "dev" : "rollup -c -w",
+    "deploy" : "yarn build && yarn publish http://npm-repository:8700",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
